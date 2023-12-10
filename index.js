@@ -84,7 +84,7 @@ async function run() {
 
 
     //put sugarlavel data in db
-    app.put("/api/age/:id", async (req, res) => {
+    app.put("/api/sugar/:id", async (req, res) => {
       const id = req.params.id;
       const filter = { _id: new ObjectId(id) };
       const options = { upsert: true };
